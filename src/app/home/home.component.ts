@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
      </div>
 
      <div class="profile">
-      <img src="/assets/profile1.jpg" alt="profile photo"/>
+      <img src="./assets/profile1.jpg" alt="profile photo"/>
       <h3>My Bucket List:</h3>
 
       <ul class="bucket-list">

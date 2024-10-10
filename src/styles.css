@@ -1,1 +1,136 @@
-/* You can add global styles to this file, and also import other style files */
+/*Import Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+
+
+
+body, header, nav, main, section, footer, img, figure, figcaption, div, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #CFC8B5;
+    color: #3B3931;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+/*.top-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 10px;
+}
+*/
+
+ h1 {
+    flex: 1;
+    margin-right: 20px;
+    font-family: 'Oswald';
+    position: relative;
+}
+
+
+/*h1::after {
+    content: '';
+    position: left;
+    left: 100%;
+    top: 50%;
+    width: calc(80% - 20px);
+    height: 2px;
+    background-color: #3B3931;
+    transform: translateY(-50%);
+*/
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+    background-color: #42858C;
+    position: fixed;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Oswald';
+    font-size: larger;
+}
+
+.navbar-item {
+    margin: 0 15px;
+}
+
+.navbar-item a {
+    display: block;
+    color: #3B3931;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.navbar-item a:hover {
+    background-color: #CFC8B5;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    font-family: 'Bebas Neue';
+}
+
+.footer {
+    background-color: #42858C;
+    color: #3B3931;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Oswald';
+}
+
+.footer a {
+    text-decoration: none;
+    color: #3B3931;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.mat-tab-group .mat-ink-bar {
+    background-color: #42858C;
+}
+
+/*@media (max-width: 768px) {
+    .navbar-list {
+       
+    }
+}
+*/
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

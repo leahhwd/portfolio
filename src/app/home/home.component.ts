@@ -61,7 +61,7 @@ import { Component } from '@angular/core';
 
   .profile img {
     max-width: 50%;
-    height: 300px:
+    height: 300px;
     object-fit: cover;
     margin-bottom: 20px;
     border-radius: 10px;

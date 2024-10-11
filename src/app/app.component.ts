@@ -15,9 +15,9 @@ import { RouterOutlet, RouterLink } from '@angular/router';
       <nav class="navbar">
        <ul class="navbar-list">
         <li class="navbar-item"><a routerLink="/">Home</a></li>
-        <li class="navbar-item"><a href="/about">About</a></li>
-        <li class="navbar-item"><a href="/resume">Resume</a></li>
-        <li class="navbar-item"><a href="/projects">Projects</a></li>
+        <li class="navbar-item"><a routerLink="/about">About</a></li>
+        <li class="navbar-item"><a routerLink="/resume">Resume</a></li>
+        <li class="navbar-item"><a routerLink="/projects">Projects</a></li>
        </ul>
       </nav>
    
@@ -30,9 +30,9 @@ import { RouterOutlet, RouterLink } from '@angular/router';
    <footer class="footer">
     <nav class="footer-nav">
      <a routerLink="/">Home</a> |
-     <a href="/about">About</a> |
-     <a href="/resume">Resume</a> |
-     <a href="/projects">Projects</a>
+     <a routerLink="/about">About</a> |
+     <a routerLink="/resume">Resume</a> |
+     <a routerLink="/projects">Projects</a>
     </nav>
     <p>&copy; 2024</p>
    </footer>

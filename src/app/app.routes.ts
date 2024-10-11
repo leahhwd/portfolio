@@ -1,4 +1,6 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -29,5 +31,14 @@ export const routes: Routes = [
         component: ResumeComponent
     }
 ];
+
+@NgModule ({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule],
+    providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }]
+})
+
+
+export class AppRoutingModule{}
 
 
